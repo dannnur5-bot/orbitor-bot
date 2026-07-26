@@ -13,10 +13,9 @@ const {
 const TOKEN = process.env.TOKEN;
 const CLIENT_ID = process.env.CLIENT_ID;
 
-// Role yang boleh memakai /announce dan /mapupdate
+// Role yang boleh memakai /announce dan /WASD
 const allowedRoles = [
-  "1488421250958229554",
-  "1488421250916159599"
+  "1462446310874677288"
 ];
 
 // ==========================

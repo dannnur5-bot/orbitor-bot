@@ -122,18 +122,18 @@ client.once("clientReady", async () => {
       ),
 
     new SlashCommandBuilder()
-      .setName("mapupdate")
-      .setDescription("Kirim update map")
+      .setName("WASD")
+      .setDescription("Kirim invite WASD")
       .addStringOption(option =>
         option
           .setName("pesan")
-          .setDescription("Isi update map")
+          .setDescription("Isi invite WASD")
           .setRequired(true)
       )
       .addAttachmentOption(option =>
         option
           .setName("gambar")
-          .setDescription("Gambar update map opsional")
+          .setDescription("Gambar invite map opsional")
           .setRequired(false)
       )
   ].map(command => command.toJSON());
@@ -175,9 +175,9 @@ client.on("interactionCreate", async (interaction) => {
 
       const embed = new EmbedBuilder()
         .setColor("#FFD700")
-        .setTitle("📢 AFRO NIGHT • ANNOUNCEMENT")
+        .setTitle("📢 ORBITOR • ANNOUNCEMENT")
         .setDescription(pesan)
-        .setFooter({ text: "Afro Night" })
+        .setFooter({ text: "Orbitor • The Official Block Terror Bot" })
         .setTimestamp();
 
       if (gambar) {
@@ -194,15 +194,15 @@ client.on("interactionCreate", async (interaction) => {
     }
 
     // /mapupdate
-    if (interaction.commandName === "mapupdate") {
+    if (interaction.commandName === "WASS") {
       const pesan = interaction.options.getString("pesan");
       const gambar = interaction.options.getAttachment("gambar");
 
       const embed = new EmbedBuilder()
         .setColor("#8A2BE2")
-        .setTitle("🗺️ AFRO NIGHT • MAP UPDATE")
+        .setTitle("🏞 WASD")
         .setDescription(pesan)
-        .setFooter({ text: "Afro Night" })
+        .setFooter({ text: "Orbitor • The Official Block Terror Bot" })
         .setTimestamp();
 
       if (gambar) {

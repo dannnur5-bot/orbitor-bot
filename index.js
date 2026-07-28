@@ -11,7 +11,6 @@ const {
 // KONFIGURASI
 // ==========================
 const TOKEN = process.env.TOKEN;
-const CLIENT_ID = process.env.CLIENT_ID;
 
 // Role yang boleh memakai /announce dan /WASD
 const allowedRoles = [
